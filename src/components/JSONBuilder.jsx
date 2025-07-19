@@ -7,8 +7,9 @@ const defaultField=()=>({
   children:[],
   showChildren:true,
 })
-const Builder = () => {
- const [fields,setFields]=useState([defaultField()]);
+const JSONBuilder = () => {
+
+   const [fields,setFields]=useState([defaultField()]);
   const updateField=(path,key,value)=>{
     const updated= [...fields]
     let ref=updated
@@ -105,4 +106,6 @@ result[field.name]=field.type.toUpperCase()
   )
 }
 
-export default Builder
+export default JSONBuilder
+
+

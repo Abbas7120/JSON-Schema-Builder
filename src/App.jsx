@@ -1,9 +1,9 @@
 import React from 'react'
-import Builder from './components/builder'
+import JSONBuilder from './components/JSONBuilder.jsx'
 const App = () => {
   return (
     <div>
-<Builder/>
+<JSONBuilder></JSONBuilder>
     </div>
   )
 }
